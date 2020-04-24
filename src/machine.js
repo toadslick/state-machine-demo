@@ -6,7 +6,7 @@ const mockRequest = (value, match) =>
     setTimeout(value === match ? resolve : reject, 3000)
   });
 
-const loginMachine = Machine({
+export default Machine({
   id: 'login',
   initial: 'inputEmail',
   context: {
@@ -153,5 +153,3 @@ const loginMachine = Machine({
     isTfaEnabled: context => !!context.tfaEnabled,
   }
 });
-
-export default loginMachine;

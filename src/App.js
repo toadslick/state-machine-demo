@@ -1,8 +1,8 @@
 import React from 'react';
 import { useMachine } from '@xstate/react';
 
-const App = () => {
-  return <h1>boop</h1>
-}
+import Login from './Login';
+
+const App = () => <div><Login/></div>
 
 export default App;
